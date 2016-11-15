@@ -1,16 +1,11 @@
 import $ from 'jquery';
-import DOM from './multiplierDom';
+import Actions from './multiplierActions';
 
 /* Good Version: */
 
 class Multiplier {
   static setup() {
-    $('#multiply-button').click(() => {
-      const lhs = DOM.getNumber('lhs');
-      const rhs = DOM.getNumber('rhs');
-      const product = lhs * rhs;
-      DOM.setAnswer(product);
-    });
+    $('#multiply-button').click(Actions.generateAnswer);
   }
 }
 
