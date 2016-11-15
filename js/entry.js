@@ -1,7 +1,6 @@
-class CoolioStarstache {
-  static exec() {
-    document.write('hi!');
-  }
-}
+import $ from 'jquery';
+import Multiplier from './lessons/multiplier/multiplier';
 
-CoolioStarstache.exec();
+$(document).ready(() => {
+  Multiplier.setup();
+});
