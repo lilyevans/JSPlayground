@@ -1,14 +1,15 @@
 import $ from 'jquery';
+import DOM from './multiplierDom';
 
 /* Good Version: */
 
 class Multiplier {
   static setup() {
     $('#multiply-button').click(() => {
-      const lhs = parseFloat($('#lhs').val());
-      const rhs = parseFloat($('#rhs').val());
+      const lhs = DOM.getNumber('lhs');
+      const rhs = DOM.getNumber('rhs');
       const product = lhs * rhs;
-      $('#answer').text(product);
+      DOM.setAnswer(product);
     });
   }
 }
