@@ -3,6 +3,11 @@ import Actions from './multiplierActions';
 
 /* Good Version: */
 
+/**
+ *  This is responsible for setting up the appropriate event handlers
+ *  and initializing other important things relevant for the multiplier
+ *  functionality.
+ */
 class Multiplier {
   static setup() {
     $('#multiply-button').click(Actions.generateAnswer);
