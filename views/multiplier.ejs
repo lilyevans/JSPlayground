@@ -6,6 +6,12 @@
     <script src='/javascripts/bundle.js'></script>
   </head>
   <body>
+    <div class="exercises">
+      <h3>Exercises</h3>
+      <% for (var i = 0; i < exercises.length; i++) { %>
+         <a href='<%= exercises[i] %>'><%= exercises[i] %></a>
+      <% } %>
+    </div>
     <form>
       <input id="lhs" type="text" /><span class="operator">&times;</span><input id="rhs" type="text" /><br />
       <button id="multiply-button" type="button">Multiply!</button>
