@@ -10,4 +10,8 @@ router.get('/multiplier', function(req, res) {
   res.render('multiplier', { title: 'Multiplier'});
 });
 
+router.get('/emailValidator', function(req, res) {
+  res.render('emailValidator', { title: 'Email Validator'});
+});
+
 module.exports = router;

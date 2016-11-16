@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+.hide {  display: none;  }
+.text-alert-danger {  color: #a94442;  }
+.text-alert-success {  color: #3c763d;  }

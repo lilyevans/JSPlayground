@@ -11,7 +11,7 @@ class EmailValidator {
         $('#email-error').removeClass('hide');
         $('#email-error').text('Must be between 1 and 255 characters');
       }
-      else if(!email.test(/.+@thoughtworks\.com$/)) {
+      else if(!/.+@thoughtworks\.com$/.test(email)) {
         $('#email-error').removeClass('hide');
         $('#email-error').text('Email must end with @thoughtworks.com');
       }
