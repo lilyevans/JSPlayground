@@ -19,6 +19,8 @@ npm install
 npm start
 ```
 
+Then go to `localhost:3000` in your favorite browser.
+
 # Add Some JS
 
 Only add Javascript to the js folder.  There is a public/javascripts folder lying around somewhere, but don't use it.  Generated code goes there.
