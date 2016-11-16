@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "webpack:watch": "webpack --watch",
+    "start": "npm-run-all --parallel webpack:watch startApp",
+    "startApp": "node app.js"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -19,6 +21,7 @@
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
     "babel-preset-latest": "^6.16.0",
+    "npm-run-all": "^3.1.1",
     "webpack": "^1.13.3"
   }
 }

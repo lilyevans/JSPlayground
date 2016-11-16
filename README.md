@@ -15,14 +15,8 @@ npm install
 
 # Running the App
 
-Turn it on:
 ```
-./start.sh
-```
-
-Turn it off:
-```
-./stop.sh
+npm start
 ```
 
 # Add Some JS
@@ -36,4 +30,3 @@ When you make new modules, they need to be imported into the entry.js file locat
 This project mimics a super basic, databaseless web server so webby stuff can be used in the Javascript, like DOM manipulation, event handling, jQuery, AJAX calls, and so on.
 
 I'll look into this a little more soon.  You can add new routes and views, but I'm not sure how flexible this node js thing is yet...
-
