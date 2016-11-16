@@ -6,6 +6,12 @@
     <script src='/javascripts/bundle.js'></script>
   </head>
   <body>
+    <div class="exercises">
+      <h3>Exercises</h3>
+      <% for (var i = 0; i < exercises.length; i++) { %>
+         <a href='<%= exercises[i] %>'><%= exercises[i] %></a>
+      <% } %>
+    </div>
     <form>
       <span>Email: <input id="email" type="text" /> <button type="button" id="button">Submit</button></span><br />
       <span id="email-success" class="text-alert text-alert-success hide">Email submitted!</span>

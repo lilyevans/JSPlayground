@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const exercises = ['multiplier'];
+const exercises = ['multiplier', 'emailValidator'];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,7 +12,7 @@ router.get('/multiplier', function(req, res) {
 });
 
 router.get('/emailValidator', function(req, res) {
-  res.render('emailValidator', { title: 'Email Validator'});
+  res.render('emailValidator', { title: 'Email Validator', exercises});
 });
 
 module.exports = router;
