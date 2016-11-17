@@ -1,24 +1,9 @@
 import $ from 'jquery';
+import Actions from './emailValidatorActions';
 
 class EmailValidator {
   static setup() {
-    $('#button').click(() => {
-      $('#email-error').addClass('hide');
-      $('#email-success').addClass('hide');
-      const email = $('#email').val();
-      
-      if(email.length < 1 || email.length > 255) {
-        $('#email-error').removeClass('hide');
-        $('#email-error').text('Must be between 1 and 255 characters');
-      }
-      else if(!/.+@thoughtworks\.com$/.test(email)) {
-        $('#email-error').removeClass('hide');
-        $('#email-error').text('Email must end with @thoughtworks.com');
-      }
-      else {
-        $('#email-success').removeClass('hide');
-      }
-    });
+    $('#button').click(Actions.submit);
   }
 }
 
